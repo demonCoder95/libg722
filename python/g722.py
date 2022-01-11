@@ -68,10 +68,6 @@ class G722Decoder(G722Coder):
             self.BUFFER_SIZE * 2
         )
 
-class G722Encoder(G722Coder):
-    def __init__(self) -> None:
-        g722_lib = ctypes.CDLL(g722_lib_path)
-        pass
 # if runs as a script
 if __name__ == '__main__':
     import sys
