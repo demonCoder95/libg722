@@ -50,7 +50,7 @@ class G722Coder:
         output_data = (ctypes.c_byte * self.output_size)()
 
         # call the library function to decode
-        self._f_g722Decode(self.deocder,
+        self._f_g722Decode(self.decoder,
             input_data, input_data_size,
             output_data)
 
